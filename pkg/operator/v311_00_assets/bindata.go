@@ -119,6 +119,9 @@ subjects:
 - kind: ServiceAccount
   name: namespace-security-allocation-controller
   namespace: openshift-infra
+- kind: User
+  name: system:kube-controller-manager
+  namespace: openshift-kube-controller-manager
 roleRef:
   kind: Role
   name: system:openshift:leader-locking-cluster-policy-controller

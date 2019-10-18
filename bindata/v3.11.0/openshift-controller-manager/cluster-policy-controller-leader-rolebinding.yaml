@@ -12,8 +12,8 @@ subjects:
 - kind: ServiceAccount
   name: namespace-security-allocation-controller
   namespace: openshift-infra
-- kind: ServiceAccount
-  name: kube-controller-manager
+- kind: User
+  name: system:kube-controller-manager
   namespace: openshift-kube-controller-manager
 roleRef:
   kind: Role
